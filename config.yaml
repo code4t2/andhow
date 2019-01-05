@@ -1,0 +1,7 @@
+baseURL: "https://eeverman.github.io/andhow"
+languageCode: "en-us"
+title: "AndHow - strong.valid.simple Application Configuration"
+theme: "docdock"
+languageCode: "en-us"
+draft: false
+#canonifyURLs: true
