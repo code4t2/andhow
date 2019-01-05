@@ -35,8 +35,8 @@ Do you have a question or need some help? [Join the discussion!](https://sites.g
 </dependency>
 {{< / highlight >}}
 
-<i>AndHow can be used in projects with Java 8 and above, however, Java 9 and above have
-[some restrictions.](https://sites.google.com/view/andhow/user-guide/java9)</i>
+_AndHow can be used in projects with Java 8 and above, however, Java 9 and above have
+[some restrictions.](https://sites.google.com/view/andhow/user-guide/java9)_
 
 #### Sample Usage Example
 
@@ -91,8 +91,8 @@ Strong typing means that calling `COUNT_DOWN_START.getValue()` returns an `Integ
 
 The example has default values for each property. With no other configuration available, invoking the main method uses 
 the default values and prints: `3...2...1...GoGoGo!` The simplest way to configure some other values would be to create 
-a properties file named `andhow.properties` on your classpath, but <i>don't do that quite yet - AndHow will create that 
-file for you.</i>  
+a properties file named `andhow.properties` on your classpath, but _don't do that quite yet - AndHow will create that 
+file for you._  
 
 What happens if we remove one of the default values from the code above? Both properties must be non-null, so removing 
 the default causes the validation rules to be violated at startup.  Here is an excerpt of the console output when that 
