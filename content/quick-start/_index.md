@@ -59,6 +59,7 @@ application configuration which might tell AndHow where to find values to load. 
 prevented during compile time and [will be handled in a future release](https://github.com/eeverman/andhow/issues/292).
 
 ## Configuring Values in a Properties File  
+
 Next we need to actually configure values for our properties. AndHow will read configuration from many different 
 sources, but the simplest way is to just read them from a properties file named `andhow.properties` at the root of the 
 classpath. If the example properties above were in the sample.MyClass class, that properties file could look like this:
@@ -68,13 +69,15 @@ sample.MyClass.MY_INT : 5
 sample.MyClass.MY_STR : Some String...
 {{< / highlight >}}  
 
-## Configuring Values... in lots of other ways
+## Configuring Values... in lots of other ways  
+
 A key feature of AndHow is that it can read configuration from many different sources such as JNDI, environmental 
 variables, command line arguments, system properties, etc... Internally, AndHow has a standard list of loaders it uses, 
 each capable of loading values from a specific configuration source. To get the most out of AndHow, be sure to look at 
 [the complete list of standard loaders and their basic behaviors](../user-guide/value-loaders).
 
-## Property names, values, nulls and whitespace
+## Property names, values, nulls and whitespace  
+
 Unlike most other configuration utilities, did you notice we didn't create a 'name' for the Properties we created? That 
 is because Properties are referred to by the Java semantic path of the Property declaration. For example, a property 
 declared as `Boom` in the class `three.two.One` would be referred to by the name `three.two.One.Boom` in configuration 
@@ -86,6 +89,7 @@ is inherently case sensitive. By default AndHow removes whitespace and trims val
 and null handling here](../user-guide/key-concepts).
 
 ## A useful shortcut:  Auto-created sample configuration files  
+
 For most applications, the simplest way to get started is to run the application without any configuration. Assuming 
 that at least one required Property with no default value, AndHow will create a sample `andhow.properties` file and 
 throw an error at startup like this:

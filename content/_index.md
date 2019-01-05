@@ -8,7 +8,8 @@ title: Home
 AndHow is an easy to use configuration framework with strong typing and detailed validation for web apps, command line 
 or any application environment.
 
-### Key Features
+### Key Features  
+
 <input type="checkbox" checked disabled> Strong Typing  
 <input type="checkbox" checked disabled> Detailed validation  
 <input type="checkbox" checked disabled> Simple to use  
@@ -17,13 +18,15 @@ or any application environment.
 <input type="checkbox" checked disabled> Loads values from multiple sources (JNDI, env vars, prop files, etc)  
 <input type="checkbox" checked disabled> Generate configuration sample files based on application properties  
 
-### Questions / Discussion / Contact
+### Questions / Discussion / Contact  
+
 [Join the discussion](https://sites.google.com/view/andhow/join-discussion) on the 
 [user forum](https://groups.google.com/d/forum/andhowuser) or the Slack group (See details on the 
 [Join](https://sites.google.com/view/andhow/join-discussion) page).  
 Do you have a question or need some help? [Join the discussion!](https://sites.google.com/view/andhow/join-discussion)
 
-### Use it via Maven (available on Maven Central)
+### Use it via Maven (available on Maven Central)  
+
 {{< highlight xml "linenos=inline,hl_lines=2-3" >}}
 <dependency>
     <groupId>org.yarnandtail</groupId>
@@ -70,16 +73,22 @@ Do you have a question or need some help? [Join the discussion!](https://sites.g
 }
 {{< / highlight >}}
 From the code example above:  
+
 ##### Section <1> - Declaring AndHow properties  
+
 Properties must be `final static`, but may be `private` or any other scope. `builder` methods simplify adding 
 validation, description, defaults and other metadata. Properties are strongly typed, so default values and validation 
 are specific to the type, for instance, `StrProp` has regex validation rules for `String`s while the `IntProp` has 
 greater-than and less-than rules available.  
+
 ##### Section <2> - Using AndHow Properties  
+
 AndHow Properties are used just like static final constants with an added `.getValue()` on the end to fetch the value.
 Strong typing means that calling `COUNT_DOWN_START.getValue()` returns an `Integer` while calling
 `LAUNCH_CMD.getValue()` returns a `String`.
-##### How do I actually configure some values?
+
+##### How do I actually configure some values?  
+
 The example has default values for each property. With no other configuration available, invoking the main method uses 
 the default values and prints: `3...2...1...GoGoGo!` The simplest way to configure some other values would be to create 
 a properties file named `andhow.properties` on your classpath, but <i>don't do that quite yet - AndHow will create that 
