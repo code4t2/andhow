@@ -1,7 +1,24 @@
-baseURL: "https://eeverman.github.io/andhow"
+baseURL: "https://eeverman.github.io/"
 languageCode: "en-us"
+DefaultContentLanguage: "en"
 title: "AndHow - strong.valid.simple Application Configuration"
 theme: "docdock"
-languageCode: "en-us"
 draft: false
 #canonifyURLs: true
+menu:
+  shortcuts:
+    - pre: <h3>More</h3>
+      name: <i class='fa fa-github'></i> <label>Source</label>
+      identifier: ds
+      url: 'https://github.com/eeverman/andhow/'
+      weight: 10
+    - name: <i class='fa fa-github'></i> <label>Examples</label>
+      url: 'https://github.com/eeverman/andhow-samples/'
+      weight: 10
+    - name: <i class='fa fa-box'></i> <label>Artifacts</label>
+      identifier: hugodoc
+      url: 'https://mvnrepository.com/artifact/org.yarnandtail'
+      weight: 20
+    - name: <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+      url: /join-discussion
+      weight: 30
