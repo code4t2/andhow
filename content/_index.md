@@ -1,6 +1,7 @@
 ---
 title: Home
 ---  
+
 # AndHow
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

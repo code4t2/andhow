@@ -14,7 +14,7 @@ associated tests that highlight testing techniques.
  - [Load property values from a file on the filesystem](../usage-examples/load-configuration-from-filesystem). Loading 
  from the filesystem is slightly trickier than loading from the classpath because the filesystem varies between 
  environments.
- - [Working with legacy/existing applications that have existing property names](../user-guide/legacy-apps). Its easy 
+ - [Working with legacy/existing applications that have existing property names](../user-guide/legacy-apps.md). Its easy 
  to add AndHow into an existing application without having to modify existing code.
 
 #### More examples to come...  
