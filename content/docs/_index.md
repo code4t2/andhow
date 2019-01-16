@@ -1,5 +1,6 @@
 ---
 title: Documentation
+weight: 12
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

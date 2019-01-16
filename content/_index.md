@@ -1,5 +1,6 @@
 ---
 title: Home
+weight: 0
 ---  
 
 # AndHow

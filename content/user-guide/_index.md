@@ -1,5 +1,6 @@
 ---
 title: User Guide
+weight: 6
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

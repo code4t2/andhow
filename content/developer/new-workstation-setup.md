@@ -1,5 +1,6 @@
 ---
 title: New Workstation Setup
+weight: 15
 ---  
 
 ### Reference workstation platform  

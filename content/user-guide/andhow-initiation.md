@@ -1,5 +1,6 @@
 ---
 title: AndHow Startup / Initiation
+weight: 9
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

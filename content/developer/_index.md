@@ -1,5 +1,6 @@
 ---
 title: Developer
+weight: 14
 ---  
 
  > This page describes how to develop and modify the AndHow project.  If you are looking for information for how to use 

@@ -1,5 +1,6 @@
 ---
 title: Key Concepts
+weight: 7
 ---
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

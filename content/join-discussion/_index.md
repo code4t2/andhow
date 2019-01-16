@@ -1,5 +1,6 @@
 ---
 title: Join the Discussion
+weight: 13
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

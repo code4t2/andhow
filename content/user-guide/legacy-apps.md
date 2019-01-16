@@ -1,5 +1,6 @@
 ---
 title: Working with Legacy Apps
+weight: 10
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

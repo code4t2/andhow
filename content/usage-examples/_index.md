@@ -1,5 +1,6 @@
 ---
 title: Usage Examples
+weight: 3
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

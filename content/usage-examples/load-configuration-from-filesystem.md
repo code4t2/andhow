@@ -1,5 +1,6 @@
 ---
 title: Load configuration from filesystem
+weight: 5
 ---  
 
 #### Load configuration from somewhere on the filesystem  

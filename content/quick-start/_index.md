@@ -1,5 +1,6 @@
 ---
 title: Quick Start
+weight: 1
 ---  
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

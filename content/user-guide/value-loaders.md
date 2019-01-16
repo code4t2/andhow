@@ -1,5 +1,6 @@
 ---
 title: Value Loaders
+weight: 8
 ---
 
 <strong><center> strong.valid.simple Application Configuration </center></strong>

@@ -1,5 +1,6 @@
 ---
 title: main() startup example
+weight: 4
 ---  
 
 #### Example an app that starts up & loads arguments from main(String[] args)  
