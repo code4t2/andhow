@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AndHow - strong.valid.simple Application Configuration</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-16T21:47:59 IST">
+<title>main() startup example :: AndHow - strong.valid.simple Application Configuration</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/eeverman.github.io\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/usage-examples/main-startup-example/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://eeverman.github.io/">AndHow - strong.valid.simple Application Configuration</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow-samples/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Examples</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Source</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://mvnrepository.com/artifact/org.yarnandtail"  rel="noopener">
+                  <i class='fa fa-box'></i> <label>Artifacts</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/join-discussion"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/quick-start/" class="dd-item
+        ">
+      <div>
+      <a href="/quick-start/">Quick Start</a>
+      </div>
+    </li>
+    <li data-nav-id="/usage-examples/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/usage-examples/">Usage Examples</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/usage-examples/main-startup-example/" class="dd-item active">
+        <div>
+          <a href="/usage-examples/main-startup-example/">
+            main() startup example
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/usage-examples/load-configuration-from-filesystem/" class="dd-item">
+        <div>
+          <a href="/usage-examples/load-configuration-from-filesystem/">
+            Load configuration from filesystem
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/user-guide/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/user-guide/">User Guide</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user-guide/key-concepts/" class="dd-item">
+        <div>
+          <a href="/user-guide/key-concepts/">
+            Key Concepts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/value-loaders/" class="dd-item">
+        <div>
+          <a href="/user-guide/value-loaders/">
+            Value Loaders
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/andhow-initiation/" class="dd-item">
+        <div>
+          <a href="/user-guide/andhow-initiation/">
+            AndHow Startup / Initiation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/legacy-apps/" class="dd-item">
+        <div>
+          <a href="/user-guide/legacy-apps/">
+            Working with Legacy Apps
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/java9/" class="dd-item">
+        <div>
+          <a href="/user-guide/java9/">
+            Projects using Java 9&#43;
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/docs/" class="dd-item
+        ">
+      <div>
+      <a href="/docs/">Documentation</a>
+      </div>
+    </li>
+    <li data-nav-id="/join-discussion/" class="dd-item
+        ">
+      <div>
+      <a href="/join-discussion/">Join the Discussion</a>
+      </div>
+    </li>
+    <li data-nav-id="/developer/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/developer/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/developer/new-workstation-setup/" class="dd-item">
+        <div>
+          <a href="/developer/new-workstation-setup/">
+            New Workstation Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/quick-start/" >
+   Quick Start</option>
+    <option value="/usage-examples/" >
+   Usage Examples</option> 
+      <option value="/usage-examples/main-startup-example/"  selected>- main() startup example</option>
+      <option value="/usage-examples/load-configuration-from-filesystem/" >- Load configuration from filesystem</option>
+  
+    <option value="/user-guide/" >
+   User Guide</option>
+    <option value="/docs/" >
+   Documentation</option>
+    <option value="/join-discussion/" >
+   Join the Discussion</option>
+    <option value="/developer/" >
+   Developer</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/eeverman.github.io\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>main() startup example</h1>
+    
+    
+    
+    
+
+<h4 id="example-an-app-that-starts-up-loads-arguments-from-main-string-args">Example an app that starts up &amp; loads arguments from main(String[] args)</h4>
+
+<p>Full source and tests for this example can be found
+<a href="https://github.com/eeverman/andhow-samples/tree/master/simple-using-string-args">here</a> and is an extension of the
+example on the home page.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#f92672">package</span> org.simple<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.property.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#a6e22e">@GroupInfo</span><span style="color:#f92672">(</span>name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Launch Config&#34;</span><span style="color:#f92672">,</span> desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;More details...&#34;</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SimpleStringArgs</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> IntProp COUNT_DOWN_START <span style="color:#f92672">=</span> IntProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">mustBeNonNull</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Start the countdown from this number&#34;</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">mustBeGreaterThanOrEqualTo</span><span style="color:#f92672">(</span>1<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span> <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> StrProp LAUNCH_CMD <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">mustBeNonNull</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;What to say when its time to launch&#34;</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">mustMatchRegex</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.*Go.*&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span> <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> BolProp NOTIFY_NEWS <span style="color:#f92672">=</span> BolProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">defaultValue</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;If true, post launch events to the AP news feed&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span> <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">launch</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>  String launch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>  <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> COUNT_DOWN_START<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span> i <span style="color:#f92672">&gt;=</span> 1<span style="color:#f92672">;</span> i<span style="color:#f92672">--)</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span>   launch <span style="color:#f92672">=</span> launch <span style="color:#f92672">+=</span> i <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;...&#34;</span><span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>  <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>  <span style="color:#66d9ef">return</span> launch <span style="color:#f92672">+</span> LAUNCH_CMD<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span> <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32</span>  AndHow<span style="color:#f92672">.</span><span style="color:#a6e22e">findConfig</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33</span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">setCmdLineArgs</span><span style="color:#f92672">(</span>args<span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34</span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">addFixedValue</span><span style="color:#f92672">(</span>NOTIFY_NEWS<span style="color:#f92672">,</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">)</span> <span style="color:#75715e">//turn off for cmd line use
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35</span><span style="color:#75715e"></span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37</span>  SimpleStringArgs gs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SimpleStringArgs<span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38</span>  System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>gs<span style="color:#f92672">.</span><span style="color:#a6e22e">launch</span><span style="color:#f92672">());</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">39</span> <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">40</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">41</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isNewsNotified</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">return</span> NOTIFY_NEWS<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span> <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">42</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>This example is just like the home page example with a few changes. First, we added a new Boolean property
+<code>NOTIFY_NEWS.</code> &lsquo;Notify&rsquo; might post to a news feed to let the world know about the launch: You probably want to happen
+when the full enterprise system is preparing a real launch (the default value is true), you probably don&rsquo;t want that to
+happen if a developer is just running this locally from command line.</p>
+
+<p>Next, we added a <code>@GroupInfo</code> annotation so we could add some notes and help information about configuring the
+Properties contained in this class.  When AndHow generates a sample configuration file, this information will be
+included.</p>
+
+<p>We&rsquo;ve also made two key additions to the main method:<br />
+ - <code>setCmdLineArgs(args)</code> injects the command line arguments into the AndHow configuration so they are included when
+ property values are read
+ - <code>addFixedValue(NOTIFY_NEWS, false)</code> forces <code>NOTIFY_NEWS</code> to always be false when run from the command line because
+ we don&rsquo;t local testing to show up on CNN. When a &lsquo;real launch&rsquo; happens, this class would probably be used in larger
+ framework and the main method not used.</p>
+
+<p>One more small change: The default values were removed from <code>COUNT_DOWN_START</code> and <code>LAUNCH_CMD</code>. When this is run for
+the first time, an error is thrown because these properties are required. Any time there is a startup error, AndHow
+generates configuration samples. Here is an excerpt - Note that the <code>@GroupInfo</code> information was added:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-log" data-lang="log"># ##########################################################################################
+# Property Group &#39;Launch Config&#39; - More details...
+#   Defined in org.simple.SimpleStringArgs
+
+# 
+# COUNT_DOWN_START (Integer) NON-NULL - Start the countdown from this number
+# The property value must be greater than or equal to 1
+org.simple.SimpleStringArgs.COUNT_DOWN_START = [Integer]
+
+# 
+# LAUNCH_CMD (String) NON-NULL - What to say when its time to launch
+# The property value must match the regex expression &#39;.*Go.*&#39;
+org.simple.SimpleStringArgs.LAUNCH_CMD = [String]
+
+# 
+# NOTIFY_NEWS (Boolean)  - If true, post launch events to the AP news feed
+# Default Value: true
+org.simple.SimpleStringArgs.NOTIFY_NEWS = true</code></pre></div>
+
+<p>If you try out <a href="https://github.com/eeverman/andhow-samples/tree/master/simple-using-string-args">this sample project</a>,
+the generated property file has already been copied to the resources directory as <code>/andhow.properties</code> - delete or
+rename it to force AndHow to generate another copy.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/usage-examples/" title="Usage Examples"> <i class="fa fa-chevron-left"></i><label>Usage Examples</label></a>
+    <a class="nav nav-next" href="/usage-examples/load-configuration-from-filesystem/" title="Load configuration from filesystem" style="margin-right: 0px;"><label>Load configuration from filesystem</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p><a href="https://github.com/eeverman/andhow">Source Code</a>  | <a href="https://github.com/eeverman/andhow/issues">Report an Issue</a>  |
+<a href="https://twitter.com/eeverman">Questions / Suggestions</a> | <a href="../join-discussion">Ask a Question / Join the Discussion</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

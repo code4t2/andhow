@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AndHow - strong.valid.simple Application Configuration</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-16T21:47:59 IST">
+<title>Value Loaders :: AndHow - strong.valid.simple Application Configuration</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/eeverman.github.io\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/user-guide/value-loaders/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://eeverman.github.io/">AndHow - strong.valid.simple Application Configuration</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow-samples/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Examples</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Source</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://mvnrepository.com/artifact/org.yarnandtail"  rel="noopener">
+                  <i class='fa fa-box'></i> <label>Artifacts</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/join-discussion"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/quick-start/" class="dd-item
+        ">
+      <div>
+      <a href="/quick-start/">Quick Start</a>
+      </div>
+    </li>
+    <li data-nav-id="/usage-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/usage-examples/">Usage Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/usage-examples/main-startup-example/" class="dd-item">
+        <div>
+          <a href="/usage-examples/main-startup-example/">
+            main() startup example
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/usage-examples/load-configuration-from-filesystem/" class="dd-item">
+        <div>
+          <a href="/usage-examples/load-configuration-from-filesystem/">
+            Load configuration from filesystem
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/user-guide/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/user-guide/">User Guide</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+        </ul>
+    </li>
+    <li data-nav-id="/docs/" class="dd-item
+        ">
+      <div>
+      <a href="/docs/">Documentation</a>
+      </div>
+    </li>
+    <li data-nav-id="/join-discussion/" class="dd-item
+        ">
+      <div>
+      <a href="/join-discussion/">Join the Discussion</a>
+      </div>
+    </li>
+    <li data-nav-id="/developer/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/developer/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/developer/new-workstation-setup/" class="dd-item">
+        <div>
+          <a href="/developer/new-workstation-setup/">
+            New Workstation Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/quick-start/" >
+   Quick Start</option>
+    <option value="/usage-examples/" >
+   Usage Examples</option>
+    <option value="/user-guide/" >
+   User Guide</option> 
+      <option value="/user-guide/key-concepts/" >- Key Concepts</option>
+      <option value="/user-guide/value-loaders/"  selected>- Value Loaders</option>
+      <option value="/user-guide/andhow-initiation/" >- AndHow Startup / Initiation</option>
+      <option value="/user-guide/legacy-apps/" >- Working with Legacy Apps</option>
+      <option value="/user-guide/java9/" >- Projects using Java 9&#43;</option>
+  
+    <option value="/docs/" >
+   Documentation</option>
+    <option value="/join-discussion/" >
+   Join the Discussion</option>
+    <option value="/developer/" >
+   Developer</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/eeverman.github.io\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Value Loaders</h1>
+    
+    
+    
+    
+
+<p><strong><center> strong.valid.simple Application Configuration </center></strong></p>
+
+<p>During AndHow&rsquo;s initialization, AndHow attempts to load values for each configuration property in your application. By
+default, AndHow uses its standard list of <code>Loader</code>s to load values from various configuration sources, such as JNDI,
+properties files or system properties.  AndHow sequentially calls <code>load()</code> on each <code>Loader</code> and values are set for each
+Property on a <strong>first win basis</strong>, meaning that the first loader to find a non-null value for a Property sets its value.
+Values found later by other loaders are ignored.</p>
+
+<p>Below is the standard list of configuration sources and loaders, in order, from first to last:</p>
+
+<ol>
+<li>Fixed values - values explicitly set in code during initiation  - <code>StdFixedValueLoader</code></li>
+<li><code>String[]</code> arguments from the <code>static void main()</code> method - <code>StdMainStringArgsLoader</code></li>
+<li>System Properties read from <code>System.getPropertiesa()</code> - <code>StdSysPropLoader</code></li>
+<li>Environmental Variables read from <code>System.getenv()</code> - <code>StdEnvVarLoader</code></li>
+<li>JNDI context variables - <code>StdJndiLoader</code></li>
+<li>Java properties file on the filesystem (path spec&rsquo;ed as an AndHow property) - <code>StdPropFileOnFilesystemLoader</code></li>
+<li>Java properties file on the classpath (defaults to <code>/andhow.properties</code>) - <code>StdPropFileOnClasspathLoader</code></li>
+</ol>
+
+<p>The default set and order of loaders will work for most applications, but its easy to change the order or insert <a href="https://github.com/eeverman/andhow/tree/master/andhow-core/src/main/java/org/yarnandtail/andhow/load">other
+loaders</a> into the
+the load sequence - there is an example of that at the bottom of this page.</p>
+
+<p>In general you do not directly work with the Standard loaders because they are internally created  by AndHow. Instead,
+the StdConfig API is used to configure how AndHow creates the standard loaders.</p>
+
+<h4 id="the-standard-loaders-in-detail-in-order">The Standard Loaders in detail, in Order</h4>
+
+<h5 id="stdfixedvalueloader-fixed-values-loader">StdFixedValueLoader - Fixed values loader</h5>
+
+<p>The fixed value loader is used to set values directly in code.</p>
+
+<h6 id="typical-use-case">Typical Use Case</h6>
+
+<p>Since this loader uses fixed values in code, it is only useful for specifying configuration of your application during
+testing. Configuration values can be directly set in code so that your application can be tested in a specific
+configured state. Since this is the first loader, a property value set by this load will override configuration values
+found by any other loader.</p>
+
+<h6 id="basic-behaviors">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: No</li>
+<li>Complains about unrecognized properties: NA - This is not possible</li>
+<li>Default behavior:  None - This loader is only active if values are directly set as shown below</li>
+</ul>
+
+<h6 id="loader-details-and-configuration">Loader Details and Configuration</h6>
+
+<p>One simple way to set fixed values is shown below. AndHow will discover this class implementing the <code>AndHowInit</code>
+interface during initialization to read your configuration. That looks like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.property.StrProp<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SetFixedValues</span> <span style="color:#66d9ef">implements</span> AndHowInit <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>  <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> AndHowConfiguration <span style="color:#a6e22e">getConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>    <span style="color:#66d9ef">return</span>  StdConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">addFixedValue</span><span style="color:#f92672">(</span>MY_PROP<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;some value&#34;</span><span style="color:#f92672">);</span>  <span style="color:#75715e">//MY_PROP is some visible property
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">8</span><span style="color:#75715e"></span>  <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">9</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>Alternatively you can use <code>AndHow.findConfig()</code> at an application entry point such as the main method.</p>
+
+<p>TODO: This example should be for a test, since that is the only appropriate usage for this loader.</p>
+
+<h5 id="stdmainstringargsloader-string-arguments-loader">StdMainStringArgsLoader - String[] arguments loader</h5>
+
+<p>Reads an array of Strings containing key value pairs in the form <code>key=value</code>, and loads the value for any key that
+matches a <code>Property</code>. This is normally used to read in command line arguments.</p>
+
+<h6 id="typical-use-case-1">Typical Use Case</h6>
+
+<p>An executable jar or desktop application accepts command line arguments at startup to configure the application. This
+loader loads the <code>String[]</code> args passed to the <code>main(String[] args)</code>, which Java passes from the command line. This is
+the most common usage, however, your application may retrieve an array of <code>String</code>&rsquo;s from anywhere to pass to AndHow at
+startup.</p>
+
+<h6 id="basic-behaviors-1">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: Yes</li>
+<li>Complains about unrecognized properties: No</li>
+<li>Default behavior:  None - This loader is only active if command line arguments are passed in as shown below</li>
+</ul>
+
+<h6 id="loader-details-and-configuration-1">Loader Details and Configuration</h6>
+
+<p>AndHow is not &lsquo;there&rsquo; to somehow intercept command line arguments - Your application code will need to do that and pass
+those arguments to AndHow, like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyAppClass</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>    AndHow<span style="color:#f92672">.</span><span style="color:#a6e22e">findConfig</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">setCmdLineArgs</span><span style="color:#f92672">(</span>args<span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">8</span>  <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">9</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>Passing values from the command line looks like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">java -jar MyJarName.jar full.name.of.MY_PROPERTY=someValue</code></pre></div>
+
+<p><a href="../usage-examples/main-startup-example">Here is a complete example of using command line arguments</a>.</p>
+
+<h5 id="stdsysproploader-system-properties-loader">StdSysPropLoader - System Properties Loader</h5>
+
+<p>Reads the Java system properties and loads the value for any system property who&rsquo;s name matches a Property.</p>
+
+<h6 id="typical-use-case-2">Typical Use Case</h6>
+
+<p>An application might receive all or some of its configuration from Java system properties that are set when the JVM
+starts. Java system properties can be set in a startup script, which could be customized for each environment. This
+provides a relatively easy way for deployment automation or system administrators to control application configuration
+values across many servers.</p>
+
+<h6 id="basic-behaviors-2">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: No (Individual Properties may still trim values)</li>
+<li>Complains about unrecognized properties: No</li>
+<li>Default behavior: AndHow always attempts to read Java system properties and will assign property values if any of
+the system properties match known property names.</li>
+</ul>
+
+<h6 id="loader-details-and-configuration-2">Loader Details and Configuration</h6>
+
+<p>This loader loads properties from <code>java.lang.System.getProperties()</code>. Over the lifecycle of the JVM, values of system
+properties can change so this loader is working from a snapshot of the system properties it finds at the time of AndHow
+initialization. Once loaded, AndHow property values never change.</p>
+
+<p>For <code>FlgProp</code> properties (true/false flags), the <code>StdSysPropLoader</code> will set the Property&rsquo;s value to true if a matching
+environment variable is found, even if the value of the property is empty. System properties can be cleared via
+<code>java.lang.System.clearProperty(name)</code>, which is how a flag value could be unset prior to AndHow loading.</p>
+
+<p>Passing system properties on command line looks like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">java -Dfull.name.of.MY_PROPERTY=someValue -jar MyJarName.jar</code></pre></div>
+
+<h5 id="stdenvvarloader-environmental-variables-read-from-system-getenv">StdEnvVarLoader - Environmental Variables read from <code>System.getenv()</code></h5>
+
+<p>Reads the operating system defined environment variables and loads the value for any environmental variable who&rsquo;s name
+matches a <code>Property</code>.</p>
+
+<h6 id="typical-use-case-3">Typical Use Case</h6>
+
+<p>An application might receive all or some of its configuration from OS defined environmental variables that are passed
+to the JVM when the JVM starts. Environment variables can be set in the OS and augmented in a startup script, which
+could be customized for each environment.  Similar to Java system properties, this provides a relatively easy way for
+deployment automation or system administrators to control application configuration values across many servers.</p>
+
+<h6 id="basic-behaviors-3">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: No (Individual Properties may still trim values)</li>
+<li>Complains about unrecognized properties: No</li>
+<li>Default behavior:  AndHow always attempts to read environment variables and will assign property values if any of
+them match known property names.</li>
+</ul>
+
+<h6 id="loader-details-and-configuration-3">Loader Details and Configuration</h6>
+
+<p>This loader loads values from <code>System.getenv()</code>. Those environmental values are provided by the host environment (the
+OS) as a static snapshot to the JVM at startup as a String-to-String map. The underlying OS environment variables can
+change, however, the JVM is unaware of it. Similarly, <b><em>AndHow property values never change once loaded</em></b>.</p>
+
+<p>For <code>FlgProp</code> properties (true/false flags), the <code>StdEnvVarLoader</code> will set the Property&rsquo;s value to true if a matching
+environment variable is found, even if the value of the property is empty.</p>
+
+<p>The Windows OS uses ALL CAPS for environment variables, while all others OS&rsquo;s are case sensitive - This is the primary
+reason AndHow is case insensitive by default. Each OS has a different way to set an environmental variables.</p>
+
+<h5 id="stdjndiloader-jndi-context-variables">StdJndiLoader - JNDI context variables</h5>
+
+<p>Attempts to look up the name of each known Property in the JNDI environment and loads the value for any that are found.</p>
+
+<h6 id="typical-use-case-4">Typical Use Case</h6>
+
+<p>A web or service application runs in an application container such as <a href="https://tomcat.apache.org/">Tomcat</a>. Application
+containers provide a JNDI environment which can be used to configure applications running in their environment.</p>
+
+<h6 id="basic-behaviors-4">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: No (Individual Properties may still trim values)</li>
+<li>Complains about unrecognized properties: No</li>
+<li>Default behavior:  Always attempts to look up each Property in the JNDI environment.</li>
+<li>Complains about missing JNDI environment:  No (by default)</li>
+<li>Is case sensitive: Yes (This is one of the only loaders that is case sensitive)</li>
+</ul>
+
+<h6 id="loader-details-and-configuration-4">Loader Details and Configuration</h6>
+
+<p>While most other loaders are case insensitive, <b><em>the JNDI loader is case sensitive</em></b> because the JNDI API is case
+sensitive. Also, while most other loaders consume a configuration resource (e.g. a properties file) and read all the
+names and values, the JNDI loader works the other way: It goes through the list of known Properties looks up each
+property name in the JNDI context. This because its not possible to somehow read the entire JNDI environment.</p>
+
+<p>JNDI implementations vary in how they name properties, so the loader will try several common name forms, for example,
+the JNDI loader will attempt to look up the following JNDI names for a property named <code>org.foo.My_Prop</code>:</p>
+
+<ul>
+<li><code>java:comp/env/org/foo/My_Prop</code></li>
+<li><code>java:comp/env/org.foo.My_Prop</code></li>
+<li><code>java:org/foo/My_Prop</code></li>
+<li><code>java:org.foo.My_Prop</code></li>
+<li><code>org/foo/My_Prop</code></li>
+<li><code>org.foo.My_Prop</code></li>
+</ul>
+
+<p>This list has two different styles of property names: dot separated &lsquo;AndHow style&rsquo; and slash separated JNDI style.
+Additionally, AndHow looks for three different roots (the part that comes before the variable name): <code>java:comp/env/</code>
+is used by Tomcat and several other application servers, <code>java:</code> is used by some non-container environments and at
+least one application server (Glassfish) uses no root at all. In all, AndHow will search for each property under six
+different names (2 X 3). AndHow will throw an error at startup if it finds multiple names in the JNDI context that
+refer to the same property.</p>
+
+<p>Specifying JNDI environment variables varies by environment, but here is an example of specifying some properties in a
+Tomcat <code>context.xml</code> file:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Context&gt;</span>
+. . .
+<span style="color:#f92672">&lt;Environment</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;org/simple/GettingStarted/COUNT_DOWN_START&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;java.lang.Integer&#34;</span> <span style="color:#a6e22e">override=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;Environment</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;org/simple/GettingStarted/LAUNCH_CMD&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;GoGoGo!&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;java.lang.String&#34;</span> <span style="color:#a6e22e">override=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">/&gt;</span>
+. . .
+<span style="color:#f92672">&lt;/Context&gt;</span></code></pre></div>
+
+<p>In the example above, Tomcat will automatically prepend <code>java:comp/env/</code> to the name it associates with each value. As
+the example shows, JNDI values can be typed. If AndHow finds the value to already be the type it expects (e.g. an
+Integer), great! If AndHow finds a String and needs a different type, AndHow will do the conversion. Any other type of
+conversion (e.g. from a Short to an Integer) will result in an exception.</p>
+
+<p>If your JNDI environment uses a non-default different root, it can be added <a href="https://github.com/eeverman/andhow/blob/dc4f845769489204b335a0d4e19c959c786d1835/andhow-core/src/main/java/org/yarnandtail/andhow/load/std/StdJndiLoader.java#L224">using one of the built-in Properties for
+the JNDI loader</a>
+. Those property values would need to be loaded prior to the JNDI loader, so using system properties, for example,
+would work. Here is an example of adding the custom JNDI root <code>java:xyz/</code> as a system property on command line:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">java -Dorg.yarnandtail.andhow.load.std.StdJndiLoader.CONFIG.ADDED_JNDI_ROOTS=java:xyz/ -jar MyJarName.jar</code></pre></div>
+
+<h5 id="stdpropfileonfilesystemloader-java-properties-file-on-the-filesystem">StdPropFileOnFilesystemLoader - Java properties file on the filesystem</h5>
+
+<p>Parses and loads Properties from a Java .property file on the file system. Since file systems vary, there is no default
+filepath that AndHow attempts to load from.</p>
+
+<h6 id="typical-use-case-5">Typical Use Case</h6>
+
+<p>A service application might load minimal configuration from system properties or environmental variables, loading the
+bulk of its configuration from a properties file on the file system. The properties file is not part of the application
+, so it survives redeployments. A single environmental or system property could then be used to specify the properties
+file.</p>
+
+<h6 id="basic-behaviors-5">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: No (Individual Properties may still trim values)</li>
+<li>Complains about unrecognized properties: Yes</li>
+<li>Complains if the .properties file is missing: Yes (if a file path is configured)</li>
+<li>Default behavior:  None - If not explicitly configured, no default loading is attempted.</li>
+</ul>
+
+<h6 id="loader-details-and-configuration-5">Loader Details and Configuration</h6>
+
+<p>This loader reads properties files using the <code>java.util.Properties</code>, which silently ignores duplicate property entries
+(i.e., the same key appearing multiple times). When there are duplicate property keys in a properties file, only the
+last assigned value is used. Full details on how Java parses properties files can be found in the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.Reader-">properties file
+specification</a>.</p>
+
+<p>This loader is only active if it is configured as shown below:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.property.StrProp<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsePropertyFileOnFilesystem</span> <span style="color:#66d9ef">implements</span> AndHowInit <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> StrProp MY_FILEPATH <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Path to a properties file on the file system. &#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>     <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;If a path is configured, startup will FAIL if the file is missing.&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>  <span style="color:#a6e22e">@Override</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>  <span style="color:#66d9ef">public</span> AndHowConfiguration <span style="color:#a6e22e">getConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>    <span style="color:#66d9ef">return</span>  StdConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">setFilesystemPropFilePath</span><span style="color:#f92672">(</span>MY_FILEPATH<span style="color:#f92672">);</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>  <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>The code above adds the property <code>MY_FILEPATH</code> (the name is arbitrary) which is used to configure the
+<code>StdPropFileOnFilesystemLoader</code> with a file location. When AndHow initializes, the <code>StdPropFileOnFilesystemLoader</code>
+checks to see if a value has been loaded for <code>MY_FILEPATH</code> by any prior loader. If a value is present, the loader tries
+to load from the configured file system path. If no value is configured, this loader is skipped.</p>
+
+<h5 id="stdpropfileonclasspathloader-java-properties-file-on-the-classpath">StdPropFileOnClasspathLoader - Java properties file on the classpath</h5>
+
+<p>Parses and loads Properties from a Java <code>.property</code> file on the classpath. By default, this loader will look for a file
+named <code>andhow.properties</code> at the root of the classpath.</p>
+
+<h6 id="typical-use-case-6">Typical Use Case</h6>
+
+<p>A service application might load the majority of its configuration from system properties or environmental variables,
+however, some sane default configuration values can be bundled with the application. By default, AndHow will discover
+and load a file named <code>andhow.properties</code> at the root of the classpath via the <code>StdPropFileOnClasspathLoader</code>.</p>
+
+<h6 id="basic-behaviors-6">Basic Behaviors</h6>
+
+<ul>
+<li>Pre-trims String values: No (Individual Properties may still trim values)</li>
+<li>Complains about unrecognized properties: Yes</li>
+<li>Complains if the .properties file is missing: No</li>
+<li>Default behavior:  Attempts to read <code>andhow.properties</code> from the root of the classpath</li>
+</ul>
+
+<h6 id="loader-details-and-configuration-6">Loader Details and Configuration</h6>
+
+<p>This loader reads properties files using the <code>java.util.Properties</code>, which silently ignores duplicate property entries
+(i.e., the same key appearing multiple times). When there are duplicate property keys in a properties file, only the
+last assigned value is used. Full details on how Java parses properties files can be found in the properties file
+specification.</p>
+
+<p>Configuring the name or classpath of the properties file can be used to enable different configuration profiles based
+on the environment. For instance, a system property could specify that <code>/test.properties</code> be used on a test server and
+<code>/production.properties</code> on a production server. An example of configuring the property file path:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.property.StrProp<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsePropertyFileOnClasspath</span> <span style="color:#66d9ef">implements</span> AndHowInit <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> StrProp MY_CLASSPATH <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Path to a properties file on the classpath. &#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>     <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;If the file is not present, it is not considered an error.&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>  <span style="color:#a6e22e">@Override</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>  <span style="color:#66d9ef">public</span> AndHowConfiguration <span style="color:#a6e22e">getConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>    <span style="color:#66d9ef">return</span>  StdConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">setClasspathPropFilePath</span><span style="color:#f92672">(</span>MY_CLASSPATH<span style="color:#f92672">);</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>  <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>The code above adds the property <code>MY_CLASSPATH</code> (the name is arbitrary) which is used to configure the
+<code>StdPropFileOnClasspathLoader</code> with a custom property file location. When AndHow initializes, the
+<code>StdPropFileOnClasspathLoader</code> checks to see if a value has been loaded for <code>MY_CLASSPATH</code> by any prior loader. If a
+value is present, the loader tries to load from the configured classpath. If no value is configured, the default
+classpath is assumed.</p>
+
+<h5 id="adding-and-changing-the-loader-order">Adding and Changing the Loader Order</h5>
+
+<p>Its easy to edit or change the order of the loaders:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#f92672">package</span> org.example<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#f92672">import</span> org.yarnandtail.andhow.load.std.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ModifyStdLoaderOrder</span> <span style="color:#66d9ef">implements</span> AndHowInit <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>  <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> AndHowConfiguration <span style="color:#a6e22e">getConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>    <span style="color:#66d9ef">return</span> StdConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">setStandardLoaders</span><span style="color:#f92672">(</span>StdEnvVarLoader<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> StdJndiLoader<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>  <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>The example class above implements the AndHowInit interface. At startup, AndHow will discover this class and use it to
+configure itself. In this case, the standard list of seven loaders has been replaced with just two. Its also possible
+to leave the standard list intact and insert loaders between the standard loaders:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> AndHowConfiguration <span style="color:#a6e22e">getConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>  PropFileOnClasspathLoader pfl <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PropFileOnClasspathLoader<span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>  pfl<span style="color:#f92672">.</span><span style="color:#a6e22e">setFilePath</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/my.properties&#34;</span><span style="color:#f92672">);</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>  <span style="color:#66d9ef">return</span>  StdConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">insertLoaderBefore</span><span style="color:#f92672">(</span>StdJndiLoader<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> pfl<span style="color:#f92672">);</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>Only a single instance of each of the Standard loaders is allowed - these are the loaders with names start with &lsquo;Std&rsquo;
+and implement the <code>StandardLoader</code> interface, however, it is OK to insert any number of any other loader.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/user-guide/key-concepts/" title="Key Concepts"> <i class="fa fa-chevron-left"></i><label>Key Concepts</label></a>
+    <a class="nav nav-next" href="/user-guide/andhow-initiation/" title="AndHow Startup / Initiation" style="margin-right: 0px;"><label>AndHow Startup / Initiation</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p><a href="https://github.com/eeverman/andhow">Source Code</a>  | <a href="https://github.com/eeverman/andhow/issues">Report an Issue</a>  |
+<a href="https://twitter.com/eeverman">Questions / Suggestions</a> | <a href="../join-discussion">Ask a Question / Join the Discussion</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

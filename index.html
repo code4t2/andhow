@@ -1,4 +1,405 @@
+<!DOCTYPE html>
 <html>
-<head></head>
-<body>Hello!</body>
+  <head>
+	<meta name="generator" content="Hugo 0.53" />
+    <title>AndHow - strong.valid.simple Application Configuration</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-16T21:47:59 IST">
+<title>Home :: AndHow - strong.valid.simple Application Configuration</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/eeverman.github.io\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://eeverman.github.io/">AndHow - strong.valid.simple Application Configuration</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow-samples/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Examples</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Source</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://mvnrepository.com/artifact/org.yarnandtail"  rel="noopener">
+                  <i class='fa fa-box'></i> <label>Artifacts</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/join-discussion"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/quick-start/" class="dd-item
+        ">
+      <div>
+      <a href="/quick-start/">Quick Start</a>
+      </div>
+    </li>
+    <li data-nav-id="/usage-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/usage-examples/">Usage Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/usage-examples/main-startup-example/" class="dd-item">
+        <div>
+          <a href="/usage-examples/main-startup-example/">
+            main() startup example
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/usage-examples/load-configuration-from-filesystem/" class="dd-item">
+        <div>
+          <a href="/usage-examples/load-configuration-from-filesystem/">
+            Load configuration from filesystem
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/user-guide/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/user-guide/">User Guide</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user-guide/key-concepts/" class="dd-item">
+        <div>
+          <a href="/user-guide/key-concepts/">
+            Key Concepts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/value-loaders/" class="dd-item">
+        <div>
+          <a href="/user-guide/value-loaders/">
+            Value Loaders
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/andhow-initiation/" class="dd-item">
+        <div>
+          <a href="/user-guide/andhow-initiation/">
+            AndHow Startup / Initiation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/legacy-apps/" class="dd-item">
+        <div>
+          <a href="/user-guide/legacy-apps/">
+            Working with Legacy Apps
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/java9/" class="dd-item">
+        <div>
+          <a href="/user-guide/java9/">
+            Projects using Java 9&#43;
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/docs/" class="dd-item
+        ">
+      <div>
+      <a href="/docs/">Documentation</a>
+      </div>
+    </li>
+    <li data-nav-id="/join-discussion/" class="dd-item
+        ">
+      <div>
+      <a href="/join-discussion/">Join the Discussion</a>
+      </div>
+    </li>
+    <li data-nav-id="/developer/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/developer/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/developer/new-workstation-setup/" class="dd-item">
+        <div>
+          <a href="/developer/new-workstation-setup/">
+            New Workstation Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/quick-start/" >
+   Quick Start</option>
+    <option value="/usage-examples/" >
+   Usage Examples</option>
+    <option value="/user-guide/" >
+   User Guide</option>
+    <option value="/docs/" >
+   Documentation</option>
+    <option value="/join-discussion/" >
+   Join the Discussion</option>
+    <option value="/developer/" >
+   Developer</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/eeverman.github.io\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    
+    
+    
+    
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+</span>
+ 
+
+
+<h1 id="andhow">AndHow</h1>
+
+<p><strong><center> strong.valid.simple Application Configuration </center></strong></p>
+
+<p>AndHow is an easy to use configuration framework with strong typing and detailed validation for web apps, command line
+or any application environment.</p>
+
+<h3 id="key-features">Key Features</h3>
+
+<p><input type="checkbox" checked disabled> Strong Typing<br />
+<input type="checkbox" checked disabled> Detailed validation<br />
+<input type="checkbox" checked disabled> Simple to use<br />
+<input type="checkbox" checked disabled> Use Java public &amp; private to control configuration visibility<br />
+<input type="checkbox" checked disabled> Validates all property values at startup to Fail Fast<br />
+<input type="checkbox" checked disabled> Loads values from multiple sources (JNDI, env vars, prop files, etc)<br />
+<input type="checkbox" checked disabled> Generate configuration sample files based on application properties</p>
+
+<h3 id="questions-discussion-contact">Questions / Discussion / Contact</h3>
+
+<p><a href="https://sites.google.com/view/andhow/join-discussion">Join the discussion</a> on the
+<a href="https://groups.google.com/d/forum/andhowuser">user forum</a> or the Slack group (See details on the
+<a href="https://sites.google.com/view/andhow/join-discussion">Join</a> page).<br />
+Do you have a question or need some help? <a href="https://sites.google.com/view/andhow/join-discussion">Join the discussion!</a></p>
+
+<h3 id="use-it-via-maven-available-on-maven-central">Use it via Maven (available on Maven Central)</h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#f92672">&lt;dependency&gt;</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>    <span style="color:#f92672">&lt;groupId&gt;</span>org.yarnandtail<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#f92672">&lt;artifactId&gt;</span>andhow<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>    <span style="color:#f92672">&lt;version&gt;</span>0.4.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p><em>AndHow can be used in projects with Java 8 and above, however, Java 9 and above have
+<a href="https://sites.google.com/view/andhow/user-guide/java9">some restrictions.</a></em></p>
+
+<h4 id="sample-usage-example">Sample Usage Example</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>  <span style="color:#f92672">package</span> org.simple<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>  <span style="color:#f92672">import</span> org.yarnandtail.andhow.property.*<span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GettingStarted</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>    
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>   <span style="color:#75715e">// Section &lt;1&gt; - Declaring AndHow properties
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> IntProp COUNT_DOWN_START <span style="color:#f92672">=</span> IntProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">mustBeNonNull</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Start the countdown from this number&#34;</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">mustBeGreaterThanOrEqualTo</span><span style="color:#f92672">(</span>1<span style="color:#f92672">).</span><span style="color:#a6e22e">defaultValue</span><span style="color:#f92672">(</span>2<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>   
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> StrProp LAUNCH_CMD <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">mustBeNonNull</span><span style="color:#f92672">()</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">desc</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;What to say when its time to launch&#34;</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">mustMatchRegex</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.*Go.*&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">defaultValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;GoGoGo!&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>   
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>   <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">launch</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>    String launch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>    
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>    <span style="color:#75715e">// Section &lt;2&gt; - Using AndHow Properties
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> COUNT_DOWN_START<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span> i <span style="color:#f92672">&gt;=</span> 1<span style="color:#f92672">;</span> i<span style="color:#f92672">--)</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>      launch <span style="color:#f92672">=</span> launch <span style="color:#f92672">+=</span> i <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;...&#34;</span><span style="color:#f92672">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>    <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>  <span style="color:#66d9ef">return</span> launch <span style="color:#f92672">+</span> LAUNCH_CMD<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span> <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>    GettingStarted gs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> GettingStarted<span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>gs<span style="color:#f92672">.</span><span style="color:#a6e22e">launch</span><span style="color:#f92672">());</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span> <span style="color:#f92672">}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span><span style="color:#f92672">}</span></code></pre></div>
+From the code example above:</p>
+
+<h5 id="section-1-declaring-andhow-properties">Section <1> - Declaring AndHow properties</h5>
+
+<p>Properties must be <code>final static</code>, but may be <code>private</code> or any other scope. <code>builder</code> methods simplify adding
+validation, description, defaults and other metadata. Properties are strongly typed, so default values and validation
+are specific to the type, for instance, <code>StrProp</code> has regex validation rules for <code>String</code>s while the <code>IntProp</code> has
+greater-than and less-than rules available.</p>
+
+<h5 id="section-2-using-andhow-properties">Section <2> - Using AndHow Properties</h5>
+
+<p>AndHow Properties are used just like static final constants with an added <code>.getValue()</code> on the end to fetch the value.
+Strong typing means that calling <code>COUNT_DOWN_START.getValue()</code> returns an <code>Integer</code> while calling
+<code>LAUNCH_CMD.getValue()</code> returns a <code>String</code>.</p>
+
+<h5 id="how-do-i-actually-configure-some-values">How do I actually configure some values?</h5>
+
+<p>The example has default values for each property. With no other configuration available, invoking the main method uses
+the default values and prints: <code>3...2...1...GoGoGo!</code> The simplest way to configure some other values would be to create
+a properties file named <code>andhow.properties</code> on your classpath, but <em>don&rsquo;t do that quite yet - AndHow will create that
+file for you.</em></p>
+
+<p>What happens if we remove one of the default values from the code above? Both properties must be non-null, so removing
+the default causes the validation rules to be violated at startup.  Here is an excerpt of the console output when that
+happens:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-log" data-lang="log">========================================================================
+Drat! There were AndHow startup errors. Sample configuration files will be written to: /some_local_tmp_directory/andhow-samples/&#39;
+========================================================================
+REQUIRMENT PROBLEMS
+Property org.simple.GettingStarted.COUNT_DOWN_START: This Property must be non-null
+========================================================================</code></pre></div>
+
+<p>AndHow throws a RuntimeException to stop application startup and uses property metadata to generate specific error
+messages and (helpfully) sample configuration files. Here is an excerpt of the generated properties file:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-log" data-lang="log"># ######################################################################
+# Property Group org.simple.GettingStarted
+
+# COUNT_DOWN_START (Integer) NON-NULL - Start the countdown from this number
+# The property value must be greater than or equal to 1
+org.simple.GettingStarted.COUNT_DOWN_START = [Integer]
+
+# LAUNCH_CMD (String) NON-NULL - What to say when its time to launch
+# The property value must match the regex expression &#39;.*Go.*&#39;
+org.simple.GettingStarted.LAUNCH_CMD = [String]</code></pre></div>
+
+<p>AndHow uses the property metadata to create a detailed and well commented sample configuration file for your project.
+Insert some real values into that file and place it on your classpath at <code>/andhow.properties</code> and it will automatically
+be discovered and loaded at startup.</p>
+
+<p>Thats it!  To get started with AndHow, check out the
+<a href="https://sites.google.com/view/andhow/quick-start">Quick Start page</a>.</p>
+
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-next" href="/quick-start/" title="Quick Start" style="margin-right: 0px;"><label>Quick Start</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p><a href="https://github.com/eeverman/andhow">Source Code</a>  | <a href="https://github.com/eeverman/andhow/issues">Report an Issue</a>  |
+<a href="https://twitter.com/eeverman">Questions / Suggestions</a> | <a href="../join-discussion">Ask a Question / Join the Discussion</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
 </html>

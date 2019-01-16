@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on AndHow - strong.valid.simple Application Configuration</title>
+    <link>https://eeverman.github.io/</link>
+    <description>Recent content in Home on AndHow - strong.valid.simple Application Configuration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://eeverman.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>main() startup example</title>
+      <link>https://eeverman.github.io/usage-examples/main-startup-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/usage-examples/main-startup-example/</guid>
+      <description>Example an app that starts up &amp;amp; loads arguments from main(String[] args) Full source and tests for this example can be found here and is an extension of the example on the home page.
+1package org.simple;23import org.yarnandtail.andhow.*;4import org.yarnandtail.andhow.property.*;56@GroupInfo(name=&amp;#34;Launch Config&amp;#34;, desc=&amp;#34;More details...&amp;#34;)7public class SimpleStringArgs {8 9 final static IntProp COUNT_DOWN_START = IntProp.builder().mustBeNonNull()10 .desc(&amp;#34;Start the countdown from this number&amp;#34;)11 .mustBeGreaterThanOrEqualTo(1).build();12 13 private final static StrProp LAUNCH_CMD = StrProp.</description>
+    </item>
+    
+    <item>
+      <title>Load configuration from filesystem</title>
+      <link>https://eeverman.github.io/usage-examples/load-configuration-from-filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/usage-examples/load-configuration-from-filesystem/</guid>
+      <description>Load configuration from somewhere on the filesystem Loading from the filesystem is slightly trickier than loading from the classpath because the filesystem varies between environments.
+Full source and tests for this example can be found here.
+The path to a property file on the filesystem will vary from machine to machine, tier to tier, so it cannot be hardcoded - it must be a Property that can be configured.</description>
+    </item>
+    
+    <item>
+      <title>Key Concepts</title>
+      <link>https://eeverman.github.io/user-guide/key-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/user-guide/key-concepts/</guid>
+      <description>strong.valid.simple Application Configuration 
+AndHow initializes and loads property values only once at startup Initiation is AndHow&amp;rsquo;s startup/bootstrap process where it discovers discovers all Properties, loads values, and validates them. This will only be done once in the lifecycle of the application and loaded values will never change.
+There is more detail about the initiation process on the Initiation page.
+AndHow respects Java privacy modifiers Internally, AndHow maps the property itself to the property&amp;rsquo;s value.</description>
+    </item>
+    
+    <item>
+      <title>Value Loaders</title>
+      <link>https://eeverman.github.io/user-guide/value-loaders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/user-guide/value-loaders/</guid>
+      <description>strong.valid.simple Application Configuration 
+During AndHow&amp;rsquo;s initialization, AndHow attempts to load values for each configuration property in your application. By default, AndHow uses its standard list of Loaders to load values from various configuration sources, such as JNDI, properties files or system properties. AndHow sequentially calls load() on each Loader and values are set for each Property on a first win basis, meaning that the first loader to find a non-null value for a Property sets its value.</description>
+    </item>
+    
+    <item>
+      <title>AndHow Startup / Initiation</title>
+      <link>https://eeverman.github.io/user-guide/andhow-initiation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/user-guide/andhow-initiation/</guid>
+      <description>strong.valid.simple Application Configuration 
+AndHow Initiation Initiation is AndHow&amp;rsquo;s startup/bootstrap process where it does the following: - Discovers its own configuration - Discovers all declared AndHow Properties (even those in dependencies) - Loads values for those properties from various sources using the configured Loaders - Validates all property values
+Implicit Initiation Implicit initiation happens as a side effect of reading a property value, which is what happens in the GettingStarted example: for (int i = COUNT_DOWN_START.</description>
+    </item>
+    
+    <item>
+      <title>Working with Legacy Apps</title>
+      <link>https://eeverman.github.io/user-guide/legacy-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/user-guide/legacy-apps/</guid>
+      <description>strong.valid.simple Application Configuration 
+Strong typing, validation at startup, and semantic property names are nice features for new applications, but what about existing applications that are relying on finding specifically named properties?
+AndHow uses alias and exports to bridge the gap between legacy &amp;lsquo;name dependent&amp;rsquo; applications and its semantic naming approach. Below is an example that might be used for a legacy application expecting to find configuration in System.Properties with a specific set of names.</description>
+    </item>
+    
+    <item>
+      <title>Projects using Java 9&#43;</title>
+      <link>https://eeverman.github.io/user-guide/java9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/user-guide/java9/</guid>
+      <description>Special considerations with Java 9 and Above With Java 9 and the introduction of Jigsaw and the module system, Java no longer allows arbitrary reflection: If a module is not open, its not possible to use reflection to inspect private members of the classes in the module.
+AndHow uses reflection to get references to the configuration Properties declared in your classes. Without the ability to reflect into your application code, AndHow can&amp;rsquo;t do its job.</description>
+    </item>
+    
+    <item>
+      <title>New Workstation Setup</title>
+      <link>https://eeverman.github.io/developer/new-workstation-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/developer/new-workstation-setup/</guid>
+      <description>Reference workstation platform Main development has been done on this platform:
+ Java JDK 1.8 Netbeans 8.2 (SE, EE or &amp;lsquo;All&amp;rsquo; version) Maven 3.5.2 (min 3.2.2 required) Git 2.8.1 or better A Github account is required to submit pull requests to merge you code changes into the canonical repository
+  MacOS 10.13 was used as the OS, but this is not an actual requirement. Linux and Windows systems should work but are untested.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://eeverman.github.io/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eeverman.github.io/_footer/</guid>
+      <description>Source Code | Report an Issue | Questions / Suggestions | Ask a Question / Join the Discussion</description>
+    </item>
+    
+  </channel>
+</rss>

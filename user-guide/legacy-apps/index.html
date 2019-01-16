@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AndHow - strong.valid.simple Application Configuration</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-16T21:47:59 IST">
+<title>Working with Legacy Apps :: AndHow - strong.valid.simple Application Configuration</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/eeverman.github.io\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/user-guide/legacy-apps/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://eeverman.github.io/">AndHow - strong.valid.simple Application Configuration</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow-samples/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Examples</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Source</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://mvnrepository.com/artifact/org.yarnandtail"  rel="noopener">
+                  <i class='fa fa-box'></i> <label>Artifacts</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/join-discussion"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/quick-start/" class="dd-item
+        ">
+      <div>
+      <a href="/quick-start/">Quick Start</a>
+      </div>
+    </li>
+    <li data-nav-id="/usage-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/usage-examples/">Usage Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/usage-examples/main-startup-example/" class="dd-item">
+        <div>
+          <a href="/usage-examples/main-startup-example/">
+            main() startup example
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/usage-examples/load-configuration-from-filesystem/" class="dd-item">
+        <div>
+          <a href="/usage-examples/load-configuration-from-filesystem/">
+            Load configuration from filesystem
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/user-guide/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/user-guide/">User Guide</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user-guide/key-concepts/" class="dd-item">
+        <div>
+          <a href="/user-guide/key-concepts/">
+            Key Concepts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/value-loaders/" class="dd-item">
+        <div>
+          <a href="/user-guide/value-loaders/">
+            Value Loaders
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/andhow-initiation/" class="dd-item">
+        <div>
+          <a href="/user-guide/andhow-initiation/">
+            AndHow Startup / Initiation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/legacy-apps/" class="dd-item active">
+        <div>
+          <a href="/user-guide/legacy-apps/">
+            Working with Legacy Apps
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/java9/" class="dd-item">
+        <div>
+          <a href="/user-guide/java9/">
+            Projects using Java 9&#43;
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/docs/" class="dd-item
+        ">
+      <div>
+      <a href="/docs/">Documentation</a>
+      </div>
+    </li>
+    <li data-nav-id="/join-discussion/" class="dd-item
+        ">
+      <div>
+      <a href="/join-discussion/">Join the Discussion</a>
+      </div>
+    </li>
+    <li data-nav-id="/developer/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/developer/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/developer/new-workstation-setup/" class="dd-item">
+        <div>
+          <a href="/developer/new-workstation-setup/">
+            New Workstation Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/quick-start/" >
+   Quick Start</option>
+    <option value="/usage-examples/" >
+   Usage Examples</option>
+    <option value="/user-guide/" >
+   User Guide</option> 
+      <option value="/user-guide/key-concepts/" >- Key Concepts</option>
+      <option value="/user-guide/value-loaders/" >- Value Loaders</option>
+      <option value="/user-guide/andhow-initiation/" >- AndHow Startup / Initiation</option>
+      <option value="/user-guide/legacy-apps/"  selected>- Working with Legacy Apps</option>
+      <option value="/user-guide/java9/" >- Projects using Java 9&#43;</option>
+  
+    <option value="/docs/" >
+   Documentation</option>
+    <option value="/join-discussion/" >
+   Join the Discussion</option>
+    <option value="/developer/" >
+   Developer</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/eeverman.github.io\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Working with Legacy Apps</h1>
+    
+    
+    
+    <p><strong><center> strong.valid.simple Application Configuration </center></strong></p>
+
+<p>Strong typing, validation at startup, and semantic property names are nice features for new applications, but what
+about existing applications that are relying on finding specifically named properties?</p>
+
+<p>AndHow uses <em>alias</em> and <em>exports</em> to bridge the gap between legacy &lsquo;name dependent&rsquo; applications and its semantic
+naming approach. Below is an example that might be used for a legacy application expecting to find configuration in
+System.Properties with a specific set of names. Even those the legacy app doesn&rsquo;t used AndHow, we&rsquo;ve created a set of
+AndHow properties to shadow the legacy app&rsquo;s configuration:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#a6e22e">@GroupExport</span><span style="color:#f92672">(</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>  exporter<span style="color:#f92672">=</span>SysPropExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>  exportByCanonicalName<span style="color:#f92672">=</span>Exporter<span style="color:#f92672">.</span><span style="color:#a6e22e">EXPORT_CANONICAL_NAME</span><span style="color:#f92672">.</span><span style="color:#a6e22e">NEVER</span><span style="color:#f92672">,</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>  exportByOutAliases<span style="color:#f92672">=</span>Exporter<span style="color:#f92672">.</span><span style="color:#a6e22e">EXPORT_OUT_ALIASES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ALWAYS</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#f92672">)</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ShoppingCartSvsConfig</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>  StrProp SERVICE_URL <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">mustEndWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">aliasInAndOut</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cart.svs&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>  IntProp TIMEOUT <span style="color:#f92672">=</span> IntProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">aliasInAndOut</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cart.to&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">aliasOut</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;timeout&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>  StrProp QUERY_ENDPOINT <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">aliasInAndOut</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cart.query&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>  StrProp ITEM_ENDPOINT <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">required</span><span style="color:#f92672">().</span><span style="color:#a6e22e">aliasInAndOut</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cart.item&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>The AndHow Properties are declared in an interface: They don&rsquo;t have to be, but it is a handy shortcut because member
+variables declared in an interface are always <code>static final</code> without having to include those modifiers.</p>
+
+<p>Anyway.</p>
+
+<p>Each property is given an <code>InAndOut</code> alias. An <em>in</em> alias is just an added name that will be recognized when reading
+property values from some configuration source, like JNDI or System.Properties. An <em>out</em> alias is available for use
+when the property names and values are exported to some configuration destination, like JNDI or System.Properties.</p>
+
+<p>Exports are configured by adding a <code>GroupExport</code> annotation to the parent (class or interface) and happen as soon as
+all property loaders have completed. In this example, the annotation specifies the <code>SysPropExporter</code>, which exports
+properties to System.Properties. It also specifies that the canonical names of the properties not be used (the legacy
+code wouldn&rsquo;t recognize those names) and that all properties with out aliases should be included in the export.</p>
+
+<p>By using <code>GroupExport</code> and <code>aliasInAndOut</code>, a legacy application can  be virtually unchanged and still benefit from
+strong typing, validation checks, multi-source loading and other features of AndHow.</p>
+
+<p>Further, multiple <code>aliasInAndOut</code>, <code>aliasIn</code> and <code>aliasOut</code>&rsquo;s can be added to a single property. Say you discover that
+your legacy code has been using two separately named configuration properties for TIMEOUT. In the example above, that
+property was given an extra out alias so that any legacy code reading <code>cart.to</code> or <code>timeout</code> from System.Properties
+will find the same value, populated from a single configuration point.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/user-guide/andhow-initiation/" title="AndHow Startup / Initiation"> <i class="fa fa-chevron-left"></i><label>AndHow Startup / Initiation</label></a>
+    <a class="nav nav-next" href="/user-guide/java9/" title="Projects using Java 9&#43;" style="margin-right: 0px;"><label>Projects using Java 9&#43;</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p><a href="https://github.com/eeverman/andhow">Source Code</a>  | <a href="https://github.com/eeverman/andhow/issues">Report an Issue</a>  |
+<a href="https://twitter.com/eeverman">Questions / Suggestions</a> | <a href="../join-discussion">Ask a Question / Join the Discussion</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

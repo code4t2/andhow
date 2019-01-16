@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://eeverman.github.io/quick-start/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/usage-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/usage-examples/main-startup-example/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/usage-examples/load-configuration-from-filesystem/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/user-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/user-guide/key-concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/user-guide/value-loaders/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/user-guide/andhow-initiation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/user-guide/legacy-apps/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/user-guide/java9/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/join-discussion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/developer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/developer/new-workstation-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/_footer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eeverman.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

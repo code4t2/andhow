@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AndHow - strong.valid.simple Application Configuration</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-16T21:47:59 IST">
+<title>Quick Start :: AndHow - strong.valid.simple Application Configuration</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/eeverman.github.io\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/quick-start/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://eeverman.github.io/">AndHow - strong.valid.simple Application Configuration</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow-samples/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Examples</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Source</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://mvnrepository.com/artifact/org.yarnandtail"  rel="noopener">
+                  <i class='fa fa-box'></i> <label>Artifacts</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/join-discussion"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/quick-start/" class="dd-item parent active
+        ">
+      <div>
+      <a href="/quick-start/">Quick Start</a>
+      </div>
+    </li>
+    <li data-nav-id="/usage-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/usage-examples/">Usage Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/usage-examples/main-startup-example/" class="dd-item">
+        <div>
+          <a href="/usage-examples/main-startup-example/">
+            main() startup example
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/usage-examples/load-configuration-from-filesystem/" class="dd-item">
+        <div>
+          <a href="/usage-examples/load-configuration-from-filesystem/">
+            Load configuration from filesystem
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/user-guide/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/user-guide/">User Guide</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user-guide/key-concepts/" class="dd-item">
+        <div>
+          <a href="/user-guide/key-concepts/">
+            Key Concepts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/value-loaders/" class="dd-item">
+        <div>
+          <a href="/user-guide/value-loaders/">
+            Value Loaders
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/andhow-initiation/" class="dd-item">
+        <div>
+          <a href="/user-guide/andhow-initiation/">
+            AndHow Startup / Initiation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/legacy-apps/" class="dd-item">
+        <div>
+          <a href="/user-guide/legacy-apps/">
+            Working with Legacy Apps
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/java9/" class="dd-item">
+        <div>
+          <a href="/user-guide/java9/">
+            Projects using Java 9&#43;
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/docs/" class="dd-item
+        ">
+      <div>
+      <a href="/docs/">Documentation</a>
+      </div>
+    </li>
+    <li data-nav-id="/join-discussion/" class="dd-item
+        ">
+      <div>
+      <a href="/join-discussion/">Join the Discussion</a>
+      </div>
+    </li>
+    <li data-nav-id="/developer/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/developer/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/developer/new-workstation-setup/" class="dd-item">
+        <div>
+          <a href="/developer/new-workstation-setup/">
+            New Workstation Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/quick-start/"  selected>
+   Quick Start</option> 
+  
+    <option value="/usage-examples/" >
+   Usage Examples</option>
+    <option value="/user-guide/" >
+   User Guide</option>
+    <option value="/docs/" >
+   Documentation</option>
+    <option value="/join-discussion/" >
+   Join the Discussion</option>
+    <option value="/developer/" >
+   Developer</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/eeverman.github.io\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Quick Start</h1>
+    
+    
+    
+
+
+
+<p><strong><center> strong.valid.simple Application Configuration </center></strong></p>
+
+<h2 id="a-quick-walk-thru-of-using-andhow-configuration-in-your-application">A quick walk-thru of using AndHow configuration in your application</h2>
+
+<blockquote>
+<p>A range of sample applications are available as a separate project,
+ <a href="https://github.com/eeverman/andhow-samples">andhow-samples</a>. Starting with the
+ <a href="https://github.com/eeverman/andhow-samples/tree/master/simple-using-string-args">simple example</a> is a great starting
+ point for trying out AndHow.</p>
+</blockquote>
+
+<h2 id="add-andhow-as-a-dependency-via-maven-available-on-maven-central">Add AndHow as a dependency via Maven (available on Maven Central)</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#f92672">&lt;dependency&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>    <span style="color:#f92672">&lt;groupId&gt;</span>org.yarnandtail<span style="color:#f92672">&lt;/groupId&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#f92672">&lt;artifactId&gt;</span>andhow<span style="color:#f92672">&lt;/artifactId&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>    <span style="color:#f92672">&lt;version&gt;</span>0.4.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<h2 id="declare-properties">Declare Properties</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> IntProp MY_INT <span style="color:#f92672">=</span> IntProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> StrProp MY_STR <span style="color:#f92672">=</span> StrProp<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span></code></pre></div>
+
+<p>As the example shows, AndHow properties can be public or private and are type specific with <a href="https://github.com/eeverman/andhow/tree/master/andhow-core/src/main/java/org/yarnandtail/andhow/property">several property types
+available</a>.
+Properties can be declared in the class or interface where they are used and can include validation rules, description
+and other metadata.</p>
+
+<p>AndHow will automatically discover your declared properties <a href="../user-guide/andhow-initiation">(details on this process)</a>
+, but there is one caveat: You cannot use reflection to create a Property - this will hide it from AndHow&rsquo;s automatic
+discovery process.</p>
+
+<h2 id="use-propertys-in-your-code">Use Propertys in your code</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>Integer anInt <span style="color:#f92672">=</span> MY_INT<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>String aString <span style="color:#f92672">=</span> MY_STR<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span></code></pre></div>
+
+<p>This part is easy:  Calling <code>getValue()</code> on any Property fetches its typed value. If AndHow has not already been
+initialized, the first attempt to fetch any value will cause it to initialize and load the configured values for all
+properties. One caveat: Don’t attempt to fetch an AndHow value in static initialization block or assign an AndHow value
+to a static variable, e.g., don&rsquo;t do this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">static</span> Integer anInt <span style="color:#f92672">=</span> MY_INT<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span> <span style="color:#75715e">/* NO - Don&#39;t assign a fetched value to a static */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">static</span> <span style="color:#f92672">{</span> MY_STR<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span> <span style="color:#f92672">}</span> <span style="color:#75715e">/* NO - Don&#39;t fetch in a static initiation block */</span> </code></pre></div>
+
+<p>Both of the two statements above would force AndHow to attempt to load values at class load time, prior to any possible
+application configuration which might tell AndHow where to find values to load. This situation can be caught and
+prevented during compile time and <a href="https://github.com/eeverman/andhow/issues/292">will be handled in a future release</a>.</p>
+
+<h2 id="configuring-values-in-a-properties-file">Configuring Values in a Properties File</h2>
+
+<p>Next we need to actually configure values for our properties. AndHow will read configuration from many different
+sources, but the simplest way is to just read them from a properties file named <code>andhow.properties</code> at the root of the
+classpath. If the example properties above were in the sample.MyClass class, that properties file could look like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>sample<span style="color:#f92672">.</span><span style="color:#a6e22e">MyClass</span><span style="color:#f92672">.</span><span style="color:#a6e22e">MY_INT</span> <span style="color:#f92672">:</span> 5
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>sample<span style="color:#f92672">.</span><span style="color:#a6e22e">MyClass</span><span style="color:#f92672">.</span><span style="color:#a6e22e">MY_STR</span> <span style="color:#f92672">:</span> Some String<span style="color:#f92672">...</span></code></pre></div>
+
+<h2 id="configuring-values-in-lots-of-other-ways">Configuring Values&hellip; in lots of other ways</h2>
+
+<p>A key feature of AndHow is that it can read configuration from many different sources such as JNDI, environmental
+variables, command line arguments, system properties, etc&hellip; Internally, AndHow has a standard list of loaders it uses,
+each capable of loading values from a specific configuration source. To get the most out of AndHow, be sure to look at
+<a href="../user-guide/value-loaders">the complete list of standard loaders and their basic behaviors</a>.</p>
+
+<h2 id="property-names-values-nulls-and-whitespace">Property names, values, nulls and whitespace</h2>
+
+<p>Unlike most other configuration utilities, did you notice we didn&rsquo;t create a &lsquo;name&rsquo; for the Properties we created? That
+is because Properties are referred to by the Java semantic path of the Property declaration. For example, a property
+declared as <code>Boom</code> in the class <code>three.two.One</code> would be referred to by the name <code>three.two.One.Boom</code> in configuration
+files.</p>
+
+<p>Property names are case insensitive, primarily for Windows compatibility. Proper case names are still used internally
+for reporting and when creating configuration sample files. One exception is when loading properties from JNDI, which
+is inherently case sensitive. By default AndHow removes whitespace and trims values to null. More details on <a href="../user-guide/key-concepts">whitespace
+and null handling here</a>.</p>
+
+<h2 id="a-useful-shortcut-auto-created-sample-configuration-files">A useful shortcut:  Auto-created sample configuration files</h2>
+
+<p>For most applications, the simplest way to get started is to run the application without any configuration. Assuming
+that at least one required Property with no default value, AndHow will create a sample <code>andhow.properties</code> file and
+throw an error at startup like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-log" data-lang="log">========================================================================
+Drat! There were AndHow startup errors.  Sample configuration files will be written to: &#39;/some_local_tmp_directory/andhow-samples/&#39;
+========================================================================</code></pre></div>
+
+<p>Edit the values to be what you need and place the generated file on your classpath at <code>/andhow.properties</code> - AndHow
+should find and read that file at startup. From there you can expand to using the other loaders as needed.</p>
+
+<h2 id="andhow-initialization">AndHow Initialization</h2>
+
+<p>Initiation is AndHow&rsquo;s startup/bootstrap process where it discovers all <code>Property</code> instances (even those in
+dependencies), loads values for them, and validates them. Think about the implications of that for a moment: AndHow
+finds all <code>Property</code> instances throughout your entire application, including those in third party jars. How is that
+even possible?</p>
+
+<p>The AndHow initiation and discovery process is one of AndHow&rsquo;s key innovation - <a href="../user-guide/andhow-initiation">Full details on how that process works
+are here</a>.</p>
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/" title="Home"> <i class="fa fa-chevron-left"></i><label>Home</label></a>
+    <a class="nav nav-next" href="/usage-examples/" title="Usage Examples" style="margin-right: 0px;"><label>Usage Examples</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p><a href="https://github.com/eeverman/andhow">Source Code</a>  | <a href="https://github.com/eeverman/andhow/issues">Report an Issue</a>  |
+<a href="https://twitter.com/eeverman">Questions / Suggestions</a> | <a href="../join-discussion">Ask a Question / Join the Discussion</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

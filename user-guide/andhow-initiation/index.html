@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AndHow - strong.valid.simple Application Configuration</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-16T21:47:59 IST">
+<title>AndHow Startup / Initiation :: AndHow - strong.valid.simple Application Configuration</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/eeverman.github.io\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/user-guide/andhow-initiation/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://eeverman.github.io/">AndHow - strong.valid.simple Application Configuration</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow-samples/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Examples</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/eeverman/andhow/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Source</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://mvnrepository.com/artifact/org.yarnandtail"  rel="noopener">
+                  <i class='fa fa-box'></i> <label>Artifacts</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/join-discussion"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Discuss</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/quick-start/" class="dd-item
+        ">
+      <div>
+      <a href="/quick-start/">Quick Start</a>
+      </div>
+    </li>
+    <li data-nav-id="/usage-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/usage-examples/">Usage Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/usage-examples/main-startup-example/" class="dd-item">
+        <div>
+          <a href="/usage-examples/main-startup-example/">
+            main() startup example
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/usage-examples/load-configuration-from-filesystem/" class="dd-item">
+        <div>
+          <a href="/usage-examples/load-configuration-from-filesystem/">
+            Load configuration from filesystem
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/user-guide/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/user-guide/">User Guide</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/user-guide/key-concepts/" class="dd-item">
+        <div>
+          <a href="/user-guide/key-concepts/">
+            Key Concepts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/value-loaders/" class="dd-item">
+        <div>
+          <a href="/user-guide/value-loaders/">
+            Value Loaders
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/andhow-initiation/" class="dd-item active">
+        <div>
+          <a href="/user-guide/andhow-initiation/">
+            AndHow Startup / Initiation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/legacy-apps/" class="dd-item">
+        <div>
+          <a href="/user-guide/legacy-apps/">
+            Working with Legacy Apps
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/user-guide/java9/" class="dd-item">
+        <div>
+          <a href="/user-guide/java9/">
+            Projects using Java 9&#43;
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/docs/" class="dd-item
+        ">
+      <div>
+      <a href="/docs/">Documentation</a>
+      </div>
+    </li>
+    <li data-nav-id="/join-discussion/" class="dd-item
+        ">
+      <div>
+      <a href="/join-discussion/">Join the Discussion</a>
+      </div>
+    </li>
+    <li data-nav-id="/developer/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/developer/">Developer</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/developer/new-workstation-setup/" class="dd-item">
+        <div>
+          <a href="/developer/new-workstation-setup/">
+            New Workstation Setup
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/quick-start/" >
+   Quick Start</option>
+    <option value="/usage-examples/" >
+   Usage Examples</option>
+    <option value="/user-guide/" >
+   User Guide</option> 
+      <option value="/user-guide/key-concepts/" >- Key Concepts</option>
+      <option value="/user-guide/value-loaders/" >- Value Loaders</option>
+      <option value="/user-guide/andhow-initiation/"  selected>- AndHow Startup / Initiation</option>
+      <option value="/user-guide/legacy-apps/" >- Working with Legacy Apps</option>
+      <option value="/user-guide/java9/" >- Projects using Java 9&#43;</option>
+  
+    <option value="/docs/" >
+   Documentation</option>
+    <option value="/join-discussion/" >
+   Join the Discussion</option>
+    <option value="/developer/" >
+   Developer</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/eeverman.github.io\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>AndHow Startup / Initiation</h1>
+    
+    
+    
+    
+
+<p><strong><center> strong.valid.simple Application Configuration </center></strong></p>
+
+<h3 id="andhow-initiation">AndHow Initiation</h3>
+
+<p>Initiation is AndHow&rsquo;s startup/bootstrap process where it does the following:
+ - Discovers its own configuration
+ - Discovers all declared AndHow Properties (even those in dependencies)
+ - Loads values for those properties from various sources using the configured <code>Loaders</code>
+ - Validates all property values</p>
+
+<h5 id="implicit-initiation">Implicit Initiation</h5>
+
+<p>Implicit initiation happens as a side effect of reading a property value, which is what happens in the
+<a href="../../#sample-usage-example">GettingStarted</a> example:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> COUNT_DOWN_START<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span> i <span style="color:#f92672">&gt;=</span> 1<span style="color:#f92672">;</span> i<span style="color:#f92672">--)</span> <span style="color:#f92672">{</span> <span style="color:#f92672">...</span> <span style="color:#f92672">}</span> </code></pre></div></p>
+
+<p>The call to Property.getValue() forces AndHow to initialize so that it can provide the value. This is the simplest
+way to use AndHow and is OK for small projects, but it is not the best practice.</p>
+
+<h5 id="explicit-initiation">Explicit Initiation</h5>
+
+<p>Explicit initiation happens when your code directs AndHow to construct its one and only instance. We could extend the
+GettingStarted example to load property values from the <code>String[] args</code> passed to the main method by explicitly
+initiating AndHow in the main method:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>      AndHow<span style="color:#f92672">.</span><span style="color:#a6e22e">findConfig</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setCmdLineArgs</span><span style="color:#f92672">(</span>args<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>      <span style="color:#75715e">//...
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#75715e"></span>  <span style="color:#f92672">}</span></code></pre></div>
+
+<p>The added line does the following:
+ - <code>findConfig()</code> finds the configuration that AndHow will use for its initiation, which can be customized
+ - <code>setCmdLineArgs(args)</code> speaks for itself&hellip;
+ - <code>build()</code> causes AndHow to do its <strong>one time only</strong> initiation</p>
+
+<p>We will get into more detail on how to configure the initiation process and what happens in each of its steps, but
+first lets take a look at why initiation takes place only once and why that is so important.</p>
+
+<h3 id="attempting-to-reinitialize-andhow-will-throw-a-runtimeexception">Attempting to reinitialize AndHow will throw a <code>RuntimeException</code></h3>
+
+<p>From the code snippets above, imagine the value for <code>COUNT_DOWN_START</code> is read, causing an implicit initiation, then
+the main method is called, which attempts an explicit initialization. If a value for <code>COUNT_DOWN_START</code> was passed to
+the main method, the value read before main() was called would be incorrect or at least unintended.</p>
+
+<p>This a serious problem and AndHow protects applications from this situation by throwing a RuntimeException anytime an
+explicit initiation is attempted when AndHow is already initialized. In practice this means that applications should
+follow best practices and have a well defined entry point where AndHow and other one-time initiation takes place.
+Common entry points are:</p>
+
+<ul>
+<li>A main method in single startup class for desktop application / executable jar<br /></li>
+<li>A ServletContextListener with a contextInitialized method for a web application<br /></li>
+</ul>
+
+<p>Using explicit initiation at your application&rsquo;s entry point ensures that configuration is deterministic and that your
+application will <a href="https://martinfowler.com/ieeeSoftware/failFast.pdf">fail fast</a> if rogue code attempts to read a
+property value before you have configured AndHow&rsquo;s initiation.</p>
+
+<h3 id="andhow-initiation-steps">AndHow Initiation Steps</h3>
+
+<p>Lets walk through each of the initiation steps</p>
+
+<h5 id="configuration-discovery">Configuration Discovery</h5>
+
+<p>AndHow will use the
+<a href="https://github.com/eeverman/andhow/blob/master/andhow-core/src/main/java/org/yarnandtail/andhow/StdConfig.java"><code>StdConfig</code></a>
+to configure itself, which is an instance of
+<a href="https://github.com/eeverman/andhow/blob/master/andhow-core/src/main/java/org/yarnandtail/andhow/AndHowConfiguration.java"><code>AndHowConfiguration</code></a>
+, unless there is an implementation of
+<a href="https://github.com/eeverman/andhow/blob/master/andhow-core/src/main/java/org/yarnandtail/andhow/AndHowInit.java"><code>AndHowInit</code></a>
+is on the classpath. <code>AndHowInit</code> is an interface with a single method: <code>getConfiguration()</code> which returns
+<code>AndHowConfiguration</code>. Common initiation needs, like injecting <code>String[] args</code> or adding fixed values can be handled
+in-line with explicit initiation (example above). For more detailed control, subclassing <code>StdConfig</code> and providing an
+<code>AndHowInit</code> implementation is needed.</p>
+
+<blockquote>
+<h5 id="how-does-andhow-scan-for-andhowinit-implementations">How does AndHow scan for <code>AndHowInit</code> implementations?</h5>
+
+<p>AndHow uses a similar process for Property discovery and configuration discovery. At compile time, the
+<a href="https://github.com/eeverman/andhow/blob/master/andhow-annotation-processor/src/main/java/org/yarnandtail/andhow/compile/AndHowCompileProcessor.java"><code>AndHowCompileProcessor</code></a>
+&lsquo;sees&rsquo; all classes as they are being compiled. If it sees a non-abstract <code>AndHowInit</code>, the processor adds a
+provider-configuration file at: <code>META-INF/services/org.yarnandtail.andhow.AndHowInit</code> which just contains the full
+name of the implementation. At runtime, the Java
+<a href="https://docs.oracle.com/javase/9/docs/api/java/util/ServiceLoader.html"><code>ServiceLoader</code></a> is able to scan all jars
+and resources on the classpath for a specific service provider interface (<code>org.yarnandtail.andhow.AndHowInit</code> in
+this case) and return instances of that service. Scanning all jars on the classpath for any classes implementing a
+specific interface is not easily or performantly possible; Scanning jars for the presence of a specific file is.</p>
+
+<p>TLDR - AndHow is able to find your custom AndHowInit implementation anywhere on the classpath.</p>
+</blockquote>
+
+<p><em>unfinished documentation &hellip;</em></p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/user-guide/value-loaders/" title="Value Loaders"> <i class="fa fa-chevron-left"></i><label>Value Loaders</label></a>
+    <a class="nav nav-next" href="/user-guide/legacy-apps/" title="Working with Legacy Apps" style="margin-right: 0px;"><label>Working with Legacy Apps</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p><a href="https://github.com/eeverman/andhow">Source Code</a>  | <a href="https://github.com/eeverman/andhow/issues">Report an Issue</a>  |
+<a href="https://twitter.com/eeverman">Questions / Suggestions</a> | <a href="../join-discussion">Ask a Question / Join the Discussion</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
