@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usage Examples on AndHow - strong.valid.simple Application Configuration</title>
-    <link>https://eeverman.github.io/usage-examples/</link>
+    <link>https://code4t2.github.io/andhow/usage-examples/</link>
     <description>Recent content in Usage Examples on AndHow - strong.valid.simple Application Configuration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://eeverman.github.io/usage-examples/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://code4t2.github.io/andhow/usage-examples/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>main() startup example</title>
-      <link>https://eeverman.github.io/usage-examples/main-startup-example/</link>
+      <link>https://code4t2.github.io/andhow/usage-examples/main-startup-example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://eeverman.github.io/usage-examples/main-startup-example/</guid>
+      <guid>https://code4t2.github.io/andhow/usage-examples/main-startup-example/</guid>
       <description>Example an app that starts up &amp;amp; loads arguments from main(String[] args) Full source and tests for this example can be found here and is an extension of the example on the home page.
 1package org.simple;23import org.yarnandtail.andhow.*;4import org.yarnandtail.andhow.property.*;56@GroupInfo(name=&amp;#34;Launch Config&amp;#34;, desc=&amp;#34;More details...&amp;#34;)7public class SimpleStringArgs {8 9 final static IntProp COUNT_DOWN_START = IntProp.builder().mustBeNonNull()10 .desc(&amp;#34;Start the countdown from this number&amp;#34;)11 .mustBeGreaterThanOrEqualTo(1).build();12 13 private final static StrProp LAUNCH_CMD = StrProp.</description>
     </item>
     
     <item>
       <title>Load configuration from filesystem</title>
-      <link>https://eeverman.github.io/usage-examples/load-configuration-from-filesystem/</link>
+      <link>https://code4t2.github.io/andhow/usage-examples/load-configuration-from-filesystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://eeverman.github.io/usage-examples/load-configuration-from-filesystem/</guid>
+      <guid>https://code4t2.github.io/andhow/usage-examples/load-configuration-from-filesystem/</guid>
       <description>Load configuration from somewhere on the filesystem Loading from the filesystem is slightly trickier than loading from the classpath because the filesystem varies between environments.
 Full source and tests for this example can be found here.
 The path to a property file on the filesystem will vary from machine to machine, tier to tier, so it cannot be hardcoded - it must be a Property that can be configured.</description>
